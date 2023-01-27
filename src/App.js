@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
-
-function App() {
+import Alluserlist from "./component/Alluserlist";
+import Test from "./Test";
+import Userdetails from "./component/Userdetails";
+const App=()=> {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Test key={1}/>
+      {/* <Test key={2}/>
+      <Test key={3}/>
+      <Test key={4}/>
+      <Test key={5}/> */}
+      <Alluserlist/>
     </div>
   );
 }
